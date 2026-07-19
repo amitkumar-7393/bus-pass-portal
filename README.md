@@ -28,3 +28,4 @@ This project demonstrates front-end development skills by building a responsive 
 
 ---
 **Developed by Amit Kumar**
+Project updated using GitHub.
