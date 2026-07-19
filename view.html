@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | Bus Pass Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="admin-container">
+    <div class="top-nav">
+        <a href="index.html" class="home-link"><i class="fas fa-arrow-left"></i> Logout to Home</a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by Name, Roll, or Course...">
+        </div>
+        <button class="clear-btn" onclick="clearAllData()"><i class="fas fa-trash-can"></i> Clear Database</button>
+    </div>
+
+    <h2><i class="fas fa-users"></i> Registered Students</h2>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Course</th>
+                    <th>Bus Route</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="passTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
